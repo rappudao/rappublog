@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body > *:not(.header):not(footer)  {
+    margin: 0;
+    background-color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.body-container {
+    margin: 0;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(236, 234, 227, 0.8),
+        rgba(173, 216, 230, 0.8) 20px, /* Adjust the height of each stripe */
+        lightblue 20px, /* Adjust the height of the gap between stripes */
+        lightblue 40px /* Adjust the total height of each stripe and gap */
+    );
+}
+
+main,
+aside {
+    background-color: rgb(255, 252, 220);
+    border-radius: 10px;
+}
+
+img {
+    max-width: 80%;
+}
+
+/*---------------------CSS for header design------------------------*/
+
+.header {
+    width: 100%;
+    height: 200vh;
+    background-image: url("/Users/raphaelhimself/自作の原神ブログWEBサイト/headerbg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.logo {
+    width: 400px;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    font-weight: 450;
+}
+
+nav ul {
+    background: #000;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li img {
+    max-width: 24px; /* Set the maximum width of the images */
+    max-height: 24px; /* Set the maximum height of the images */
+    margin-right: 1px; /* Adjust the margin to separate the image from the text */
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+/* ------------------CSS design for navigation contents----------------*/
+
+.section-title {
+    border-left: solid 10px blue;
+    border-bottom: solid 3px gray;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.navigation-wrapper {
+    background-color: rgb(255, 252, 220);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 97%;
+    margin: 20px auto 40px;
+}
+
+.navigation-contents {
+    text-align: left;
+}
+
+.highlight-yellow {
+    line-height: 0.01;
+    border-bottom: solid 5px gold;
+}
+.font-red {
+    color: red; /* Red font color */
+}
+.font-large {
+    font-size: 30px;
+}
+
+/*-----------------目次欄のためのCSSデザイン---------------------*/
+.toc-002 {
+    margin-bottom: 30px auto;
+    border: 2px solid #2589d0;
+    border-radius: 5px;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.toc-002 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.toc-002 div::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M3.8%2017.2h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.8-.8-.8zm0-15h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8V3c-.1-.4-.4-.8-.8-.8zm0%207.6h-3c-.5%200-.8.3-.8.7v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.7-.8-.7zM23.2%2018h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8zm0-15h-15c-.4%200-.7.3-.7.8v1.5c0%20.4.3.7.7.7h15c.5%200%20.8-.3.8-.8V3.8c0-.5-.3-.8-.8-.8zm0%207.5h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8z%22%2F%3E%3C%2Fsvg%3E');
+    content: '';
+}
+
+.toc-002 label::after {
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: .7em;
+    color: #fff;
+    content: "＜開く＞";
+    cursor: pointer;
+}
+
+.toc-002:has(:checked) label::after {
+    content: "[閉じる]";
+}
+
+.toc-002 input {
+    display: none;
+}
+
+.toc-002 ol {
+    list-style-type: disc;
+    margin: 0;
+    overflow: hidden;
+}
+
+.toc-002 > ol {
+    height: 0;
+}
+
+.toc-002:has(:checked) > ol {
+    height: auto;
+    padding: 1em 1em 1em 3em;
+}
+
+.toc-002 ol ol {
+    margin-top: 5px;
+    padding-left: 1.1em;
+}
+
+.toc-002 li {
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.toc-002 ol ol li {
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.toc-002 a {
+    color: #333;
+    text-decoration: none;
+}
+/*--------------CSS design for Swiper class--------------*/
+
+.swiper {
+    /*スライダーの幅と高さを調整*/
+    width: 1200px;
+    width: 97%;
+    height: 500px;
+    margin: 0.5rem auto 2rem;
+    background:  url('/Users/raphaelhimself/自作の原神ブログWEBサイト/フリーナ.jpeg') top center / cover no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 80px rgba(0, 0, 255, 0.8); /* Dark blue box shadow */
+    border-radius: 10px;
+    z-index: 999;
+}
+  
+.swiper-slide {
+    /*スライド要素の幅と高さを調整*/
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  
+    /*テキストの位置調整*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    /*テキストの色と太さを指定*/
+    color: #fff;
+    font-weight: bold;
+}
+
+.swiper-pagination {
+    color: black; /* Set the color of the pagination */
+    font-size: 20px; /* Adjust the font size as needed */
+    position: fixed;
+    bottom: 0; /* Set the paginations at the very bottom of the screen */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: transparent; /* Set the background color of each pagination bullet */
+    border: 2px solid black; /* Set the border style for each pagination bullet */
+    width: 20px; /* Set the width of each pagination bullet */
+    height: 20px; /* Set the height of each pagination bullet */
+    margin: 0 5px; /* Adjust the space between bullets as needed */
+    cursor: pointer;
+}
+
+.swiper-scrollbar {
+    display: none; /* delete scrollbar */
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: black; /* Set the background color for the active pagination bullet */
+    color: rgba(0, 0, 0); /* Set the color of the active pagination number */
+}
+  
+/*-------------------------CSS design for slides-----------------------*/
+
+.slide1 {
+    position: relative;
+    background-color: gold;
+    overflow: hidden;
+    border: 5px solid gold;
+    box-shadow: 0 0 20px 5px gold;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 20px 5px gold; /* Start with a golden glow */
+    }
+    50% {
+        box-shadow: 0 0 20px 15px gold; /* Intensify the glow in the middle of the animation */
+    }
+    100% {
+        box-shadow: 0 0 20px 5px gold; /* End with a golden glow */
+    }
+}
+
+.slide1:hover {
+    animation: shine 2s infinite; /* Adjust the animation duration as needed */
+}
+
+/* Duplicate slide1 designs for future purposes */
+
+.slide2 {
+    background-color: rgba(255, 0, 0, 0.7); /* Red with 70% opacity */
+}
+.slide3 {
+    background-color: rgba(255, 0, 149, 0.7); /* Yellow with 70% opacity */
+}
+.slide4 {
+    background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
+}
+.slide5 {
+    background-color: rgba(255, 182, 193, 0.7); /* Pink with 70% opacity */
+}
+.slide6 {
+    background-color: rgba(0, 137, 7, 0.7); /* Adjust the alpha value (0.0 to 1.0) for transparency */
+}
+
+/*------------CSS design for blog articles inside the slides----------*/
+
+.article {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    width: 95%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Style for article image */
+.article img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Style for article intro */
+.article-intro {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Style for the "Read More" button */
+.article-intro a {
+    display: inline-block;
+    background-color: rgb(151, 149, 149);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.article-intro a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.blog-article {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for publication date and category */
+.blog-title + ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.blog-title + ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* CSS deisgn to make the nlog title and explanation font to black */
+/* Adjust the font color for the blog title and explanation text */
+.blog-title,
+.article-intro p {
+    color: black;
+}
+
+/* Style for the publication date */
+.blog-title + ul .publication-date {
+    font-weight: bold;
+}
+
+/* Style for the category */
+.blog-title + ul li:last-child {
+    margin-right: 0;
+}
+/*------------CSS design for URL link button------------*/
+
+.read-more-link {
+    display: inline-block;
+    background-color: #007BFF; /* Default button color */
+    color: #fff; /* Default font color */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.read-more-link::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: transform 0.3s ease; /* Add a smooth transition effect for transform */
+
+    /* Use a linear gradient for clockwise border color */
+    border: 2px solid;
+    border-image: linear-gradient(to right, #007BFF, transparent, #007BFF, transparent) 1;
+}
+
+.read-more-link:hover::before {
+    transform: scaleX(0); /* Make the border disappear on hover */
+}
+
+.read-more-link:hover {
+    background-color: #0056b3; /* Change button color to a lighter blue on hover */
+}
+
+
+/*-------------------------Main section!---------------------------*/
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    flex: 0.7;
+    padding: 20px;
+    margin-right: 30px;
+}
+/* CSS for Ayanokouji profile */
+.profile-image {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-column {
+    margin:  0;             /* デフォルトCSS打ち消し */
+    font-size:  24px;       /* 文字サイズ指定 */
+    position:  relative;    /* 位置調整 */
+    font-weight:  normal;   /* 文字の太さ調整 */
+    margin-bottom: 15px;    /* 周りの余白指定 */
+    border-bottom: solid 4px rgba(25, 0, 255, 0.6);        /* 線指定 */
+    border-radius: 0px 0px 160px 180px/0px 0px 20px 4px;    /* 角丸指定 */
+    margin: 40px 0 20px 0;
+}
+.navigation-text {
+    margin: 20px 0 20px 0; /* Adjust the value as needed for the desired space */
+}
+
+/*-------------------------Aside section!---------------------------*/
+
+aside {
+    flex: 0.3;
+    padding: 20px;
+    align-self: flex-start;
+}
+
+.author img {
+    border-radius: 50%; /* Make the image a full circle */
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.author {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.X-link {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.X-link::after {
+    content: "";
+    display: block;
+    width: 12%;
+    border-bottom: 5px solid blue;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.author-mini-profile {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/*-----------------------CSS to design the X link-------------------*/
+
+.author a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.author a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.author a:hover::before {
+    transform: scaleX(1);
+}
+
+/*-----------------------CSS for title logo--------------------------*/
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 3%;
+    max-height: 15%;
+    transition: all 1.0s;
+    z-index: 1000;
+}
+
+nav.sticky .logo {
+    margin: 50px 20px 50px 50px;
+}
+
+nav.sticky ul {
+    background: transparent;
+    font-size: 1.3rem;
+}
+
+/*--------------------------フッターのデザイン-------------------------*/
+  
+.footer-contents {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left {
+    flex: 0.5;
+}
+.footer-right {
+    flex: 0.5;
+    margin-right: 20px;
+}
+
+.footer-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.important-links {
+    margin-left: 20px;
+}
+
+.footer-ul li {
+    margin: 20px;
+}
+
+.footer-p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-a,
+.footer-profile-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Design for footer's links */
+.footer-X-link,
+.footer-threads-link {
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.footer-X-link a,
+.footer-threads-link a,
+.footer-profile-link {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-X-link a:hover,
+.footer-threads-link a:hover,
+.footer-profile-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* CSS design for contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: gray;
+    resize: vertical;
+}
+
+/* Increase the size of the resizer */
+textarea::-webkit-resizer {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+textarea::-moz-resizer {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+textarea::-ms-resizer {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* Button design*/
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+} 
+/* CSS for copy-right */
+.copyright-footer {
+    background-color: rgb(0, 0, 0); /* Mixture of black and silver */
+    color: #ccc; /* Text color */
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/*--------------------------レスポンシブ対応-------------------------*/
+
+/* メディアクエリ設定 */
+@media screen and (max-width: 728px) {
+    .logo {
+        width: 300px;
+        margin: 0 auto 20px auto;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 450;
+    }
+    
+    nav ul {
+        background: #000;
+        width: 100%;
+        margin-top: 10px;
+        height: 200%;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0px 10px;
+    }
+
+    .new-article {
+        flex-direction: column;
+    }
+
+    .new-article article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .toc-002 {
+        margin-bottom: 30px auto;
+        border: 2px solid #2589d0;
+        border-radius: 5px;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    /* CSS to style the slides */
+    .swiper-slide {
+      max-width: 100%; /* Set the maximum width of each slide */
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto; /* Center the slide horizontally */
+    }
+    .article-images {
+      max-width: 80%;
+      justify-content: center;
+      align-items: center;
+      margin: auto; /* Center the slide horizontally */
+    }
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile-img,
+    .navigation-text img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto; /* Center the slide horizontally */
+    }
+
+    main article img{
+       width: 100%;
+       margin-left: 15px;
+    }
+    main {
+        flex: 1; /* Take up full width for smaller screens */
+        margin-right: 0;
+    }
+    
+    aside {
+        flex: 1; /* Take up full width for smaller screens */
+        margin-top: 20px; /* Add margin to separate from main */
+    }
+    
+    footer {
+        text-align: center;
+    }
+}

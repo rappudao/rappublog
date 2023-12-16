@@ -163,7 +163,7 @@ nav ul li a {
 }
 
 .toc-002:has(:checked) label::after {
-    content: "[閉じる]";
+    content: "＜閉じる＞";
 }
 
 .toc-002 input {

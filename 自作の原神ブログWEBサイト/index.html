@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rappublog_(ラップブログ)</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Users/raphaelhimself/自作の原神ブログWEBサイト/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <!--Library for swiper function installation-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  </head>
+
+  <body>
+    <div class="header"> <!--Tag for default header-->
+      <nav class="navbar">
+          <h2 class="logo">rappublog</h2>
+          <ul class="menu">
+              <li><a href="#header"> <img src="home-icon.png" alt="home button"> ホーム</a></li>
+              <li><a href="#section2"> <img src="ビックリマーク.png" alt="exclamation point button">新着投稿</a></li>
+              <li><a href="#header"> <img src="本.png" alt="category button"> カテゴリ</a></li>
+              <li><a href="#section17"> <img src="コンタクト.png" alt="contact button"> コンタクト</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="body-container"> <!--Tag for seperating max width from header-->
+
+      <!--Section for navigation of the website-->
+      <div class="navigation-wrapper">
+        <nav class="navigation-contents">
+          <h1 class="section-title"　id="section1">前置き</h1>
+          <!--文字を装飾したい場合は【<span class="CSSデザイン">内容</span>】を入れる-->
+          <p class="navigation-text">
+            <br>
+            <br>
+            こんにちは、この間に作ったホームページがあまりにもお粗末だったので、<br>
+            また一から改良版を作り直すことにしたラップです！<br>
+            <br>
+            <br>
+            元々は最近気に入ってる聖遺物回収ルートをｆｆさんの皆に共有したいって思って、<br>
+            適当にはてなブログでも初めてパパッと記事作ろうかなって思ってたんだけど、<br>
+            <br>
+            <br>
+            大学に通ってる理工学部生がそんなもんで良いのか！？って自問自答したら<span class="font-red">スイッチ入っちゃって、</span><br>
+            一からブログを作ろうって決断して最初のブログ作成を学習開始から３日後に実現させた次第です笑<br>
+            <br>
+            <br>
+            と言っても原初の自作ウェブサイトは内容が拙い作品なので自慢できることは本当に何もないですけど、<br>
+            このホームページに関しては新着投稿欄などのこだわり具合が一味違うのでまあまあ誇りに思ってるぞ！<br>
+            <br>
+            <br>
+            こちらのホームページでは主に<span class="highlight-yellow">プロフィール&新着投稿欄</span>（ブログ記事を作成するたびにそちらで見出しとリンク先を掲載します）を掲載してるので、<br>
+            仲良くする際にブログ筆者であるラップのことをもっと知って貰えたらと思ってます。<br>
+            <br>
+            <br>
+            さて前置きはさておき。<br>
+            <span class="font-red">原神のことが大好きでマルチで積極的に一緒に遊びたい</span>ので、ぜひ読んでいってね。<br>
+            それではまだ少ないコンテンツ数ですが、筆者のブログをお楽しみ下さい！<br>
+            <br>
+            <br>
+          </p>
+
+          <div class="toc-002">
+            <div>
+                目次
+                <label><input type="checkbox"/></label>
+            </div>
+            <ol>
+                <li><a href="#section1">前置き</a></li>
+                <li><a href="#section2">新着投稿</a></li>
+                <li>
+                    <a href="#profile">自己紹介</a>
+                    <ol>
+                        <li><a href="#section4">ユーザーネーム</a></li>
+                        <li><a href="#section5">ニックネーム</a></li>
+                        <li><a href="#section6">原神プロフィール</a></li>
+                        <li><a href="#section7">他にも原神の好きなところ</a></li>
+                        <li><a href="#section8">他にも遊んでるゲーム</a></li>
+                        <li><a href="#section9">ゲーム以外の趣味</a></li>
+                        <li><a href="#section10">ランダムに好きなもの</a></li>
+                        <li><a href="#section11">黒歴史　〜小説風に書いてみました〜</a></li>
+                        <li><a href="#section12">特技</a></li>
+                        <li><a href="#section13">リアルでの活動</a></li>
+                        <li><a href="#section14">ウェブ制作を始めた感想</a></li>
+                        <li><a href="#section15">最後に一言</a></li>
+                    </ol>
+                </li>
+                <li><a href="#section16">大事なリンク</a></li>
+                <li><a href="#section17">コンタクトフォーム</a></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Sliderを包むコンテナ要素 -->
+      <div class="swiper" id="section2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1">
+            <article class="blog-article">
+              <h3 class="blog-title">【ver4.2対応】聖遺物回収ルート</h3>
+              <ul>
+                <li class="publication-date">202？/？？/？？</li>
+                <li>カテゴリ</li>
+              </ul>
+              <img class="article-images" src="/Users/raphaelhimself/自作の原神ブログWEBサイト/article1.img.jpeg" alt="blog1-image">
+              <div class="article-intro">
+                <p>
+                  テイワットに降臨してなお貧乏生活とは何事だ？？
+                  毎日１０万モラ稼げる聖遺物回収ルートを紹介するから、一緒にもやし生活から脱出するぞっ！！<br>
+                  ※こちらの記事を投稿し次第、URLリンクをボタンに紐づけます。
+                </p>
+              </div>
+              <a href="" class="read-more-link">記事を読む</a>
+            </article>
+          </div>
+
+          <!--Copy paste in front of the Slide1 for future purposes-->
+          <div class="swiper-slide slide2">
+            <p>※ただいま工事中です</p>
+          </div>
+          <div class="swiper-slide slide3">
+            <p>※こちらは工事中です</p>
+          </div>
+          <div class="swiper-slide slide4">
+            <p>※工事中です・・・</p>
+          </div>
+          <div class="swiper-slide slide5">
+            <p>※わちゃわちゃ工事中でしゅ</p>
+          </div>
+          <div class="swiper-slide slide6">
+            <p>※背景のフリーナめっきゃわ〜</p>
+          </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination-bullet"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <!--メインコンテンツはここから-->
+      <div class="container wrapper">
+          <main  id="profile">
+            <h1 class="section-title">自己紹介</h1>
+            <img class="profile-image" src="/Users/raphaelhimself/自作の原神ブログWEBサイト/自己紹介アイコン.jpeg" alt="Ayanokouji-icon">
+            <h3 class="profile-column" id="section4">ユーザー名</h3>
+            <p class="navigation-text">
+              @rappudao
+            </p>
+            <h3 class="profile-column" id="section5">ニックネーム</h3>
+            <p class="navigation-text">
+              ラップ
+            </p>
+            <h3 class="profile-column" id="section6">原神プロフィール</h3>
+            <p class="navigation-text">
+              ホヨラボから<span class="font-red font-large">2023/12/15</span>時点のデータ画像を持ってきました！<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/原神プロフィール.jpg" alt="genshin-profile"><br>
+              <br>
+              <br>
+              探索率は現時点で探索可能な地域は<span class="font-red font-large">オール100％</span>。<br>
+              七星召喚も現時点で取れるキャラカードは全員分確保済みで、たまに栄光の試練で自作デッキ試したりしてます。<br>
+              <br>
+              <br>
+              巷で無限湧きしてるニィロウ開花デッキを貫通型アグロデッキでぶっ潰すの気持ちいいぞ〜！<br>
+              また今度こちらのデッキをブログ記事にして投稿しようと思ってます。<br>
+              <br>
+              <br>
+              アチーブメント獲得もいつかの夜蘭ガチャですり抜けたときから血眼になって探し始めて、<br>
+              気がついたらおよそデイリー系のみ以外の分野はもう取り尽くしてたっぽいですね。<br>
+              <br>
+              <br>
+              マップ中の対戦可能なNPC達も一人残らず狩り尽くしていて、<br>
+              酒場挑戦など現時点で遊べるコンテンツも全クリするほどには程々にハマってます！<br>
+              <br>
+              <br>
+              推しキャラはクロリンデ・ナヴィア・シュヴルーズ・シグウィン！<br>
+              特に最近出たPVで無事にナヴィアの可愛さに昇天しちゃいました。<br>
+              旅人を見つけたときの表情マジでかわええ・・・<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/navia.JPG" alt="navia-image">
+              <br>
+              <br>
+              それに何を隠そう、筆者は<span class="highlight-yellow">銃✖️美少女の組み合わせが大好物</span>のオタクなのだっ！<br>
+              いつかその辺にいるフィールドボスを出会って一撃で爆裂銃殺するのが夢だぜ。<br>
+              <br>
+              <br>
+              <span class="highlight-yellow">ver4.2から無課金を卒業</span>してお小遣いを空月の祝福に投資し始めました。<br>
+              え、「ゲーム内課金とか終わってるな。ただの負債じゃん」だって？<br>
+              <br>
+              <br>
+              意義あり！！ありありだっ！！<br>
+              好きなものにお金をかけないで一体なんのために通貨は存在してるっていうんだ！？<br>
+              <br>
+              <br>
+              と言いつつも親のお小遣いで購入したものだから誇りに思ってないのは本当なんですよね。<br>
+              はぁ〜早く大学を卒業して働き始めたいって思う日々だよ・・・<br>
+            </p>
+            <h3 class="profile-column" id="section7">他にも原神の好きなところ</h3>
+            <p class="navigation-text">
+              まず最初にこのゲームで何が一番好きかと聞かれたら、<span class="＂font-red">キャラの伝説任務・世界任務・魔神任務を全てひっくるめた</span>ストーリーだと答えます！<br>
+              <br>
+              <br>
+              過去の話も沢山楽しませて頂きましたが、ver3.0に入ってからから原神の脚本力が花開いたってあなたも思いませんでしたか？？<br>
+              <br>
+              <br>
+              フォンテーヌ編の魔神任務なんて歴代最高傑作ですよあれは・・・<br>
+              第5幕でフリーナの期待を踏み躙って公開裁判にハメた罪悪感と過去の回想で泣かされたのはもちろん、第1幕と第2幕でナヴィアと共にミステリーな雰囲気を織り交ぜた事件解決した話なんてずっとワクワクしながら遊んだ思い出は今も色褪せないままだ。<br>
+              <br>
+              <br>
+              あとフレンドやｆｆさんとマルチするのもめっちゃ好き！<br>
+              探索をお手伝いしたり、一緒に下らない話をしながらだったり精鋭狩りするのが楽しいです。<br>
+              <br>
+              <br>
+              フレンドさんが丁寧に作り上げた塵歌壺に遊びに行って映える写真を撮るのも最近の楽しみ。<br>
+              特にシャルロット用のレンズが実装されてからは毎度毎度の写真撮影大会が時間を忘れるほどに楽しい！！<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/seno-image.jpeg" alt="image-seno">
+              <br>
+              <br>
+              これはこの間のマルチで撮ったセノのお気に入りの写真なんだけど、どうかな。面白くない？？<br>
+              こんな風に今までは撮れなかったキャラの爆発姿の写真が撮りやすくなってて筆者は感動してる。<br>
+              <br>
+              <br>
+              他にもまだまだ沢山マルチで一緒にキャラを取り合った写真が残ってるのでまた今度ギャラリーでも展示しようかなって思ってます！<br>
+              ほんと良いですよね最近の原神は・・・精鋭狩りに飽きたりもしますけどマルチやってて楽しくなかった時はなかった。<br>
+              <br>
+              <br>
+              来週からは推しのナヴィアが実装されるからまたマルチで写真撮影やりまくりたいって思ってます！<br>
+              都合が合えばコラボできるのであなたもぜひ一緒にマルチしたいです！
+            </p>
+            <h3 class="profile-column" id="section8">他にも遊んでるゲーム</h3>
+            <p class="navigation-text">
+              裏で崩壊スターレイルやってます！こっちもストーリーが楽しいのでピノコニー編が待ち遠しい！！<br>
+              あとブラックスワン推しなので星玉がんばって集めないとですね・・・うん、頑張る（無理）笑！<br>
+              <br>
+              <br>
+              それからスイッチの方でゼノブレイド２と３の方をちょくちょくやってるよ！<br>
+              特に2の方は戦闘システムが物凄く奥深くて夢中になれたし、３はストーリーが凄く面白い。<br>
+              <br>
+              <br>
+              スマッシュコンボで敵を高速回転させながら上空にぶっ飛ばしてから、地面に叩き潰す一連のコンボは決めるたびに脳汁ドバドバ状態ですよ。<br>
+              この快感はマリファナ吸ってる時よりも気持ち良いから依存症に気をつけて（？）←マリファナ吸ったことないのでエアプですごめん。<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/noa.jpg" alt="noa.img">
+              <br>
+              <br>
+              どっちも原神以上の広大なマップ探索だったり幅広い銭湯の運び方が魅力なので結構推せるんですよね。<br>
+              3の方はまだストーリーの最終章やってないのでそのうちストーリー終わらせてくる予定。<br>
+              <br>
+              <br>
+              前まではフォートナイトも従兄弟と通話してデゥオやったりしたけど、最近はやらなくなったなぁ。<br>
+              これも原神が楽しすぎるせいでスタレ以外のゲーム時間が日常生活から淘汰されていってるんですよね自分の中で。<br>
+              <br>
+              <br>
+              先日の夜も公式生放送で限定星５キャラのドクター・レイシオ配布とかピノコニーキャラのビジュアルと名前を一斉公開とかしてきたから、<br>
+              ver2.0以降への期待感が胸に暴れ狂ってるせいで夜しか眠れないですよね！<br>
+            </p>
+            <h3 class="profile-column" id="section9">ゲーム以外の趣味</h3>
+            <p class="navigation-text">
+              アニメやKドラマのアポカリプス系作品の視聴・ラノベ、ネット小説や文庫本の読書が筆者の主な嗜みです！<br>
+              特にアニメに関して中学生の頃からの付き合いがあるので、ルフィーに関しては親の顔よりも見た回数が多いかも？<br>
+              <br>
+              <br>
+              好きなジャンルは特になく名作と評判されてる作品は一通り目を通してあります。<br>
+              コードギアスやシュタインズゲートをワクワクしながら見たり、CLANNADやAirをイッキ見して数百年に一度しか開かない涙腺の防壁が木っ端微塵に破壊されたり。<br>
+              <br>
+              <br>
+              VS一条戦で魔法の威力を調整ミスされて生まれた危機的状況を、無駄にかっこいい銃使いで大半の的を消した司波達也（しばたつや）の作画シーンには厨二心がめっちゃ揺さぶられた！<br>
+              ここから始まったんですよね・・・魔法の世界に憧れ始めて日常生活でたまに「こんな魔法が使えたらなぁ」って妄想し始める日々が。<br>
+              <br>
+              ラノベに関しては「ようこそ実力至上主義の教室へ」を略してよう実が大好きな読者です。<br>
+              世界から猫が消えたなら、に因んでこの世から一作品を除いて全てのあらゆる書籍を消し去るけど、君は何を残したい？ってジェイソンに脅されてる金木みたいな状況に置かれたら、筆者は迷わずによう実を選びます。<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/youjitsu.jpeg" alt="youjitsu-image">
+              <br>
+              <br>
+              この作品だけに関してはね・・・主人公の潜在能力の片鱗を徐々にチラ見せしていく過程が絶妙に上手くて考察沼にハマりがちなんだよ。<br>
+              ミスリードも上手いから過去の巻で散りばめられた伏線から考察した仮説の答え合わせを、いつもワクワクしながら最新巻を読んでる。<br>
+              <br>
+              <br>
+              作品で誰を一番推してるかって言われたらそれはもう主人公の綾小路清隆（あやのこうじきよたか）が真っ先に来る。<br>
+              こいつに関しては男なら、いや全人類が憧れる「カッコいい」って言葉を人間に象った厨二病の権化そのものなのよ。<br>
+              <br>
+              <br>
+              幼少期から受けさせられた英才教育の賜物で高校に入学した時点で身体能力・勉学力・思考力が完成された状態。<br>
+              定期考査で苦しめられてる生徒が筆者以外にもいると思うけど、あれが全部赤子をあやすかのように解けるの凄くない？？<br>
+              <br>
+              <br>
+              高一の時点で特別試験に出された謎の大学数学内容である測度論やルベーグ積分を解いちゃってるのは圧巻の一言。<br>
+              筆者はこの２つの単語をググっても意味がわからなかったのでそこでも空いた口が塞がりませんでした。<br>
+              <br>
+              <br>
+              いまとなっては2年生編10巻まで作品が進んでて<span class="highlight-yellow"><span class="font-red font-large">20巻</span>以上も続いてるライトノベルシリーズ</span> なわけだけど、主人公の力の全容はまだわかってないし、これからの展開には期待しか持てない！<br>
+              <br>
+              <br>
+              筆者にとってよう実は原神と負けないくらい生きる上でのモチベだから作品の高校生編が終わっても大学生編が続いて欲しいなって純粋に思ってます。<br>
+              他にも推してるキャラといえば・・・2年生から堀北鈴音（ほりきたすずね）と1年生から天沢一夏（あまさわいちか）ですね。<br>
+              <br>
+              <br>
+              綾小路と最終的にくっつくヒロインは誰かといえば・・・それはもう堀北以外の選択肢はありないわけですよ。<br>
+              既に1巻の時点から決着してるから、後続から湧いて出たヒロイン達に関してはただの場の繋ぎだろうよ（炎上もの）<br>
+              <br>
+              <br>
+              なになに、「俺は一之瀬推しやけど？」「綾小路は軽井沢愛にそのうち目覚めるだろ」だって？<br>
+              んなわけねえだろ・・・代替品どもは役割さえ果たせばそこで終わりよ( °▽°)ｱﾊﾊ八八ﾉヽﾉヽﾉヽ<br>
+              <br>
+              <br>
+              正妻は堀北鈴音であり断固として異論は認めん！<br>
+              それでも反論ある奴はかかって来いや(°Д°＃)ｺﾞﾙｧ！<br>
+            </p>
+            <h3 class="profile-column" id="section10">ランダムに好きなもの</h3>
+            <p class="navigation-text">
+              文庫本→告白・西由比ヶ浜駅の神様・君の膵臓が食べたい・僕は勉強ができない・神のダイスを見上げて<br>
+              他のラノベ→ノゲノラ・魔法科高校の劣等生・チラムネ・弱キャラ友崎くん・青ブタ・リゼロ・転スラ<br>
+              <br>
+              <br>
+              他のアニメ→無職転生・プラメモ・デスノート・86・聲の形・ダンまち・メイドインアビス・進撃の巨人<br>
+              ネトフリ→今、私たちの学校は…・新感染・キングダム・Sweet Home・今際の国のアリス・イカゲーム<br>
+              <br>
+              <br>
+              書籍そのもの→ページをめくる音や紙の滑らかな肌触り、インクの香り全てを愛している。<br>
+              インクは臭ければ臭いほどにスーッと深呼吸したくなるもの。(  '-' )ノノ)`-' )依存症やんけ<br>
+              <br>
+              <br>
+              食べ物→母親の手作りミートソースパスタ。これに叶う料理はこの世に存在しないのだよ。<br>
+              デザート→プリン。高速挙動で揺らした際のプルンプルンとした挙動ときたらパイ乙よりも魅力的なものがある・・・可愛いと同時に美味しいプリンは人類史で生まれた至高の発明品である。<br>
+              <br>
+              <br>
+              <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/pudding.jpeg" alt="pudding-img">
+              <br>
+              <br>
+              仰ぎみよ、このピチピチな女子大学生よりも綺麗で透き通るような柔肌を！<br>
+              これは誰でも潰して舐め回して揉みし抱きたくなるような代物だっ！！<br>
+              <br>
+              <br>
+              あまりにも美しさに嫉妬してプリプリしてるJKまでもが<span class="font-large font-red">全員</span>、プリンを愛し崇拝するのだ。<br>
+              というわけで「<span class="highlight-yellow">お前もプリンにならないか？</span> 」<br>
+              <br>
+              <br>
+              人間はみんな自分の好きなものに近づいたり触れたり・・・あるいは同じになりたいと思うものである。<br>
+              あなたが自らの身を持って用意してくれた据え膳は後程、筆者がゆっくりと美味しく頂きましょう。＿|￣|○､;'.･ ｵｪｪｪｪｪ<br>
+              <br>
+              <br>
+              声優→沢城みゆきさん。とにかく声が聴き心地良すぎるせいで他のアニメでも演じたキャラの記憶が抜けねぇ。<br>
+              歌→君は歌を聞くのか？俺は聞かないが。<br>
+              <br>
+              <br>
+              音楽→諭示裁定の刻（The Oratrice's Verdict）。<br>
+              これはね・・・魔神任務やってて初めて聞いたときにブワーって鳥肌が立ったことを如実に覚えてるから語らせて貰う。<br>
+              <br>
+              <br>
+              エピクレシス歌劇場の裁判中で時々流れるこの・・・荘厳で神聖な雰囲気を醸し出すこの音楽には一耳惚れした。<br>
+              特に女性声のコーラスパートを聞いてると、何だか逆らうべきじゃない、素直になるのが一番って想いを抱くんだ。<br>
+              <br>
+              <br>
+              リオセスリの伝説任務でも流れたときは嬉し過ぎてテンション上がったことも覚えてます笑。<br>
+              ほんとにこのBGMを塵歌壺に流したいくらいなんだ・・・本作品だと聞く頻度が少ないのは勿体無いことだと思う。<br>
+              <br>
+              <br>
+              異性のタイプ→黒髪ロングヘア・知的な雰囲気・一人でも楽しそうなことを急に始める・献身的・・・かな。<br>
+              時間の使い方→やりがいを感じるなら頑張れるけど、つまらないと思った途端に萎えてテンションが下がリマス。<br>
+              <br>
+              <br>
+              人→中・高でそれぞれ１人ずつ・・・いや中学時代だけ２人だったかな？<br>
+              好きな人はいたけど、人生で初めての初恋は悲惨な結果に終わったので過去に戻りたいとは絶対に思わないですね。<br>
+              <br>
+              <br>
+              それどころか人間不信だったり、コミュ障を発症してしまう原因だったので良い思い出は本当に最初だけですよ。<br>
+              なになに、その哀れな少年を嘲笑ってやりたいから全てぶち撒ケロだって？いやいやなに思ってんすかアンタ。<br>
+              <br>
+              <br>
+              禁域に触れることだが、本当にその覚悟を君は持っているのか？
+              これ以上はノーコメントを貫きたいところだけど、今となっては話のネタに出来るほど立ち直ったので・・・<br>
+              良いっすよ（チョロｗｗｗ）<br>
+            </p>
+            <h3 class="profile-column" id="section11">黒歴史　〜小説風に書いてみました〜</h3>
+            <p class="navigation-text">
+              <br>
+              <span class="font-large">中学３年生の夏・・・ラップは・・・自ら奈落のどん底へと・・・墓穴を掘るのであった・・・</span>
+              <br>
+              <br>
+              ときは小学校時代からへと遡る。<br>
+              <br>
+              <br>
+              かつてのラップは、小学６年生の頃までは比較的に社会的動物という聖遺物の括りに属していました。<br>
+              友達と放課後に遊びに行ってスマブラしたり、休み時間にクラスの男子みんなと鬼ごっこで走り回ったり。<br>
+              <br>
+              <br>
+              徐々に日本の国風に染まりつつあるラップは対人関係に関する悩みなど欠片ほどにも抱くことはなかった。<br>
+              だが突如としてある日、ラップは一人のクラスメイトのことが何となく気になり始めました。<br>
+              <br>
+              <br>
+              お相手のMさんはいつも教室で楽しそうに親友達と談笑するや、時々目が合っていたことに気がついた。<br>
+              最初は気のせいかと思って「今日もMは可愛いなぁ」と振り返るものの、考え事の過程でラップは疑った。<br>
+              <br>
+              <br>
+              「あれ・・・もしかして僕のこと好きなのかな？」
+              <br>
+              <br>
+              時間が経つにつれ、あの純粋だった頃のラップは段々と確信を持ち始めてしまったのである。<br>
+              何せ小学一年生から中学1年生までかけて一度もクラス替えで離れたことがないからだ。<br>
+              <br>
+              <br>
+              住んでいた地域の都合で、小学校からの繰り上げは同じ中学校に向かうことを意味していた。<br>
+              7というラッキーナンバーを象徴する数字を表した年月を、一時もクラス替えで離れたこともない特別な女の子と結びつけてしまう・・・そんな純粋だったラップを誰が咎めようことか。<br>
+              <br>
+              「いやこれはほんとに運命の導きとやらなんじゃないの・・・？」「これは仕組まれたことなんじゃ」と思っていた矢先に、<br>
+              中一のクラス発表の当日にMさんは数百日ぶりに、内心ドキドキしていたラップに話しかけてくるのだった。<br>
+              <br>
+              <br>
+              「わっ、私達また同じクラスだねっ！今年もよろしくねラップ君」<br>
+              <br>
+              「ぁっ・・・え、Mさん・・・うん、宜しく」
+              <br>
+              <br>
+              何でも好きなゲームを一作品だけ親に買って貰えた誕生日なんかよりも、ずっとこの瞬間を心待ちにしていたラップはネットで学んだ恋愛術を披露する。<br>
+              「好きな子には好きだってバレては負け戦だ。興味ないフリを徹しろ、さすればやがて彼女は君のことを追うようになるはずだ」と、<br>
+              <br>
+              <br>
+              盲信していたラップはとびっきりの笑顔で喋りたい気持ちを押さえつけて、冷たい表情で返答をしてしまうのであった。<br>
+              しかし直後に受けた返事でラップの薄っぺらい仮面は取り払われて耳を赤くするのであった・・・<br>
+              <br>
+              <br>
+              「6年間も同じクラスになっちゃうなんて、運命みたいだねっ！ラップ君もそう思わない？」<br>
+              <br>
+              「なっ・・・運命って、Mさん・・・そんなわけないって。・・・これはただの偶然だよ」<br>
+              <br>
+              「ふふっ。そうかもね・・・けど・・・私は、ラップ君との縁が偶然じゃないと良いのにって、信じたいよ・・・」<br>
+              <br>
+              「・・・え・・・Mさん。それって、どういう────」<br>
+              <br>
+              <br>
+              その言葉で更にドキッと胸が高鳴ったラップは真相を確かめようとするも、Mさんは親友達の元へ駆け出してしまった。<br>
+              家に帰ってからも久しぶりに間近で見たMさんの顔を、好きな声を、去った際の少し赤らんだように見えた斜め横顔を。<br>
+              <br>
+              <br>
+              ぐるぐるとあーだこーだと深読みしながら考え事をしているとあっという間に就寝時間まで迫っていた日々を送った。<br>
+              あれからも時々・・・いやより少し頻繁に合うようになった目線や月一の頻度である会話を楽しんでいると、<br>
+              <br>
+              <br>
+              『やっほ〜ラップ君。MさんからLINE聞いたけど、フレンド追加して良いよね？それよりも聞きたいことがあるの』<br>
+              『ラップ君もMちゃんのこと好きなの？』<br>
+              <br>
+              <br>
+              小学校時代からMさんといつも仲良くしていた親友達の一人からそんな内容のLINEが届いた。<br>
+              この日を境に、ラップは傍観者でいることを辞めると決めるのだった────。<br>
+              <br>
+              <br>
+              ※ここから先の話の続きは筆者が次回、このブログを更新するまでのお預けとします。<br>
+              今日だけどうしても、このサイトをインターネットにあげたかったので申し訳ありません。<br>
+              年始年末は家族の里帰りで忙しくなるので恐らくまた来年の更新となります。(*；ω人)ｺﾞﾒﾝﾈ...<br>
+              <br>
+            </p>
+            <h3 class="profile-column" id="section12">特技</h3>
+            <p class="navigation-text">
+              次回の更新時に記載します。<br>
+            </p>
+            <h3 class="profile-column" id="section13">リアルでの活動</h3>
+            <p class="navigation-text">
+              次回の更新時に記載します。<br>
+            </p>
+            <h3 class="profile-column" id="section14">ウェブ制作を始めた感想</h3>
+            <p class="navigation-text">
+              次回の更新時に記載します。<br>
+            </p>
+            <h3 class="profile-column" id="section15">最後に一言</h3>
+            <p class="navigation-text">
+              次回の更新時に記載します。<br>
+            </p>
+          </main>
+  
+          <aside> <!--Tag for side contents-->
+              <section class="author">
+                  <img src="/Users/raphaelhimself/自作の原神ブログWEBサイト/asideicon.jpeg"
+                      alt="X-icon">
+                  <h4>ラップ</h4>
+                  <p class="author-mini-profile">
+                      原神・ラノベ・アニメを愛してます。小学校時代までは社会的動物に属す→中学時代から本の虫に→高校時代からゲーム愛に目覚める→原神ver2.8からテイワットに降臨→冒険ランク59の大学生なうです。普段はテイワットを中心にひきこもりつつ、気ままに趣味を謳歌する穏やかな日々を送っています。
+                      <br>
+                      Xの方では毎日何かしら呟いてるので、フォローして絡んで頂けると嬉しいです。
+                  </p>
+                  <h4 class="X-link"> <a href="https://twitter.com/rappudao" target="_blank">Xでフォローする <span
+                          class="black-word">></span> </a> </h4>
+              </section>
+          </aside>
+      </div>
+  
+      <script>
+        // Function for sliding title logo //
+        const menu = document.querySelector(".menu");
+        const navbar = document.querySelector(".navbar");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset >= menu.offsetTop) {
+                // Add a sticky class to the navbar
+                navbar.classList.add("sticky");
+            } else {
+                // Remove the sticky class from the navbar
+                navbar.classList.remove("sticky");
+            }
+        });
+      </script>    
+    </div>
+    <!--------------スワいパーJS機能追加用のリンク-------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--------------スワいパーJS機能を追加する-------------->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: true,
+        },
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        effect: 'coverflow',
+        speed: 1500,
+    
+        breakpoints: {
+          1: { // Setting a breakpoint with min-width 768px
+            slidesPerView: 1,
+            effect: 'slide',
+            speed: 1000,
+          },
+          768: {
+            slidesPerView: 1,
+            effect: 'slide',
+            speed: 1000,
+          },
+          800: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            effect: 'coverflow',
+            speed: 1500,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            effect: 'coverflow',
+            speed: 1500,
+          }
+        },
+      });
+
+      document.querySelectorAll('.navigation a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
+
+  <footer class="footer-contents" id="section16">
+    <div class="footer-left">
+      <h2 class="important-links">大事なリンク</h2>
+      <ul class="footer-ul">
+        <li class="footer-li"><a class="footer-a" href="#">マルチ応募フォーム：</a>
+          <p class="footer-p">（出来次第URKリンク紐付けます）</p>
+        </li>
+        <li class="footer-li"><a class="footer-a" href="#">当サイトの筆者について：</a><br>
+          <br>
+          <a class="footer-profile-link" href="#profile">ラップの詳細プロフィールを見る></a>
+        </li>
+        <li class="footer-li"><a class="footer-a" href="#">メディア：</a></li>
+          <p class="footer-threads-link"><a class="footer-a" href="https://www.threads.net/@raphael_himself" target="_blank">Threadsでフォローする></a> </p>
+          <br>
+          <p class="footer-X-link"> <a class="footer-a" href="https://twitter.com/rappudao" target="_blank">Xでフォローする></a> 
+          </p>
+          <li class="footer-li"><a class="footer-a" href="#">コンタクト：</a>
+          <br>
+          <p class="footer-p">何か要望等があれば右のコンタクトフォーム経由で<br>
+            【tomotariharuki@gmail.com】にお願いします</p>
+          <br>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-right" id="section17">
+      <h2>コンタクトフォーム</h2>
+      <br>
+      <form action="#" method="post">
+        <label for="name">ニックネーム：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email" value="tomotariharuki@gmail.com" required>
+
+        <label for="message">内容：</label>
+        <textarea class="user-comments" id="message" name="message" cols="10"　rows="10" required></textarea>
+
+        <button type="submit">送信する</button>
+      </form>
+    </div>
+  </footer>
+
+  <footer class="copyright-footer">
+    <h3>&copy; 2023 rappublog All rights reserved.</h3>
+  </footer>
+
+</html>
